@@ -1,3 +1,5 @@
+require "pry"
+
 def roll_call_dwarves(array)
   array.each.with_index(1) do |dwarf, index|
   puts "#{index}. #{dwarf}"
@@ -15,6 +17,7 @@ def long_planeteer_calls(array)
 end
 
 def find_the_cheese(array)
+  binding.pry
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.find do |any_cheese|
     any_cheese.include?(cheese_types)
